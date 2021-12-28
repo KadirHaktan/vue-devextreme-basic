@@ -8,7 +8,28 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@devextreme/runtime": "^3.0.3",
+    "axios": "0.24.0",
     "core-js": "^3.6.5",
+    "devexpress-diagram": "^2.0.45",
+    "devexpress-gantt": "^4.0.1",
+    "devextreme": "^21.2.4",
+    "devextreme-quill": "^1.5.10",
+    "devextreme-vue": "^21.2.4",
+    "dx-systemjs-vue-browser": "^1.0.15",
+    "es6-object-assign": "^1.1.0",
+    "inferno": "^7.4.11",
+    "inferno-clone-vnode": "^7.4.11",
+    "inferno-compat": "^7.4.11",
+    "inferno-create-class": "^7.4.11",
+    "inferno-create-element": "^7.4.11",
+    "inferno-dom": "^1.0.7",
+    "inferno-extras": "^7.4.11",
+    "inferno-hydrate": "^7.4.11",
+    "jszip": "^3.7.1",
+    "luxon": "^2.2.0",
+    "mitt": "^3.0.0",
+    "rrule": "^2.6.8",
     "vue": "^3.0.0"
   },
   "devDependencies": {
@@ -18,7 +39,8 @@
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
+    "eslint-plugin-vue": "^7.0.0",
+    "devextreme-themebuilder": "^21.2.4"
   },
   "eslintConfig": {
     "root": true,
