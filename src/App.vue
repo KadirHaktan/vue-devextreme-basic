@@ -43,6 +43,10 @@
   </DxGantt>
 </template>
 <script>
+
+import axios from "axios"
+
+
 import {
   DxGantt,
   DxTasks,
@@ -63,6 +67,9 @@ import {
   resourceAssignments,
 } from './data.js';
 
+
+
+
 export default {
   components: {
     DxGantt,
@@ -76,7 +83,24 @@ export default {
     DxToolbar,
     DxItem,
   },
-  data() {
+
+  async created(){
+    await this.GetTask()
+  },
+
+  methods:{
+    async GetTask(){
+      const response=await axios.get("https://localhost:44332/api/tasks")
+      const actualData=this.$data
+      const ResponseData=response.data
+      
+      actualData.tasks=ResponseData.tasks
+      actualData.dependencies=ResponseData.dependencies
+      actualData.resources=ResponseData.users
+      actualData.resourceAssignments=ResponseData.resourceAssignments
+    }
+  },
+  data() {  
     return {
       tasks,
       dependencies,
